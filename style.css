@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: teal;
+    background-image: url("https://images.unsplash.com/photo-1546271876-af6caec5fae5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80");
+    background-size: cover;
+    color: #fff;
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+}
+
+.year{
+    font-size: 200px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    font-weight: bold;
+    margin-bottom: 15px;
+    opacity: .4;
+}
+
+.countdown{
+    display: flex;
+    color: #000;
+    width: 500px;
+    height: 60px;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, .3);
+}
+
+.countdown div{
+    margin: 25px;
+     text-align: center;
+}
+
+.countdown div::before{
+    content: "";
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.countdown #day::before{
+    content: "Day";
+    
+    
+
+}
+
+.countdown #hour::before{
+    content: "Hour";
+}
+.countdown #minute::before{
+    content: "Minute";
+}
+.countdown #second::before{
+    content: "Second";
+}
